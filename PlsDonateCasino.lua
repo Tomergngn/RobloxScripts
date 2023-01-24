@@ -6,9 +6,7 @@ getgenv().settin = {
     ['Beg'] = {
         ['Delay'] = 30,
         ['Messages'] = {
-            '💎 WIN BOBUX HERE 💎',
-            '💎 EARN BY PLAYING 💎',
-            '💎 TIRED OF NO DONATIONS? PLAY OUR GAME 💎'
+            ''
         }
     }
 }
@@ -61,9 +59,6 @@ if not getgenv().settin then
 		['Beg'] = {
 			['Delay'] = 30,
 			['Messages'] = {
-				'💸 WIN BOBUX HERE 💸',
-				'💸 EARN BY PLAYING 💸',
-				'💸 TIRED OF NO DONATIONS? PLAY OUR GAME 💸'
 			}
 		}
 	}
