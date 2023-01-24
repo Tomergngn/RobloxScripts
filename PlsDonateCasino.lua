@@ -51,7 +51,7 @@ local unclaimed = {}
 local errCount = -1
 
 local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
-queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/casino.lua'))()")
+queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Tomergngn/RobloxScripts/257dee5086d45492277c9528dfe2b769180d8070/PlsDonateCasino.lua'))()")
 
 if not getgenv().settin then
 	getgenv().settin = {
