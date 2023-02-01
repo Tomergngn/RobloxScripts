@@ -381,18 +381,19 @@ msgdone.OnClientEvent:Connect(function(msgdata)
 		end
 		plrChatted:SetAttribute('Donated', newBalance)		
 	end
+    if message == '$help balance' then
+        chat('The balance command is used to see how much you\'ve earned! If your balance is 0, you\'ll need to donate to start playing!')
+    end
+    if message == '$help withdraw' then
+        chat('The withdraw command is used to get your money once you\'re done playing! Use this syntax: $withdraw <AMOUNT>. For example: $withdraw 550')
+    end
+    if message == '$help play' then
+        chat('The play command is used to play the game! You\'ll be bidding on your selected portion of your balance, 50% to win, 50% to lose!')
+    end
     if message == '$help' then
-        if message == '$help balance' then
-            chat('The balance command is used to see how much you\'ve earned! If your balance is 0, you\'ll need to donate to start playing!')
-        elseif message == '$help withdraw' then
-            chat('The withdraw command is used to get your money once you\'re done playing! Use this syntax: $withdraw <AMOUNT>. For example: $withdraw 550')
-        elseif message == '$help play' then
-            chat('The play command is used to play the game! You\'ll be bidding on your selected portion of your balance, 50% to win, 50% to lose!')
-        else
-            chat('Use these commands to start: $help | $withdraw | $play amount | $balance')
-            wait(1)
-            chat('Use $help <COMMAND> to learn about it! For example: $help balance')
-        end
+        chat('Use these commands to start: $help | $withdraw | $play amount | $balance')
+        wait(1)
+        chat('Use $help <COMMAND> to learn about it! For example: $help balance')
     end
     if message == '$withdraw' then
         if plrChatted:GetAttribute('Donated') < getgenv().settin.MinimumWithdrawAmount then
